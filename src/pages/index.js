@@ -1,6 +1,7 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import { Jumbotron, Container } from 'react-bootstrap';
 
 import * as style from "../templates/single.module.css"
 import Layout from "../components/layout"
@@ -18,9 +19,14 @@ const IndexPage = ({ data }) => (
           />
         </figure>
       )}
-      <div dangerouslySetInnerHTML={{ __html: data.wpPage.content }} />
-   
     </article>
+
+      <Jumbotron fluid className="jumbo">
+        <Container>
+          <div dangerouslySetInnerHTML={{ __html: data.wpPage.content }} />
+        </Container>
+      </Jumbotron>
+   
   </Layout>
 )
 
