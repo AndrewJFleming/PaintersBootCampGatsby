@@ -38,7 +38,8 @@ module.exports = {
       options: {
         fonts: [
           `Playfair Display\:400,400i,500i`,
-          `roboto\:400,400i,500i`
+          `roboto\:400,400i,500i`,
+          `Cabin\:400,400i,500,500i,600,600i,700,700i`
         ],
         display: 'swap',
       },

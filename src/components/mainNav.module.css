@@ -1,7 +1,7 @@
 .mainnav {
   /* margin: 1rem auto; */
-  margin: 1rem auto 0;
-  padding-bottom: 1rem;
+  margin: 0rem auto 0;
+  /* padding-bottom: 1rem; */
   font-family: Arial, Helvetica, sans-serif;
   max-width: 960px;
 }
@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -24,11 +25,15 @@
 .mainnav a {
   padding: 0.3rem 1rem;
   display: block;
-  color: white;
+  color: #10316b;
   border: 1px solid hsla(0, 0%, 100%, 0);
 }
 
 .mainnav a:hover,
 .mainnav a:focus {
   border-color: hsla(0, 0%, 100%, 1);
+}
+
+.mainnav ul ul a {
+  color: white;
 }

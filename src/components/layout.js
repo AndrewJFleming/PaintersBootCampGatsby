@@ -25,9 +25,9 @@ const Layout = ({ children }) => {
       file(name: {eq: "header-logo"}) {
         id
         childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
+          fixed(width: 270, height: 125) {
+          ...GatsbyImageSharpFixed
+        }
         }
       }
     }
@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
       <Header 
         siteTitle={data.site.siteMetadata?.title || `Title`} 
         siteAuthor={data.site.siteMetadata?.author} 
-        siteLogo={data.file.childImageSharp.fluid} 
+        siteLogo={data.file.childImageSharp.fixed} 
       />
       <div
         style={{
