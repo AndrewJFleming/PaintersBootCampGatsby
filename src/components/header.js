@@ -28,6 +28,7 @@ const Header = ({ siteTitle, siteAuthor, siteLogo }) => (
     >
 
       <Link
+        className="headerLogo"
         to="/"
       >
         <Img
@@ -61,6 +62,7 @@ const Header = ({ siteTitle, siteAuthor, siteLogo }) => (
           {siteAuthor}
         </p>
       </div>
+      <MainNav/>
     </div>
     <MainNav/>
   </header>

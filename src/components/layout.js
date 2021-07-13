@@ -8,6 +8,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import Background from '../images/body-BG.jpg';
 
 import Header from "./header"
 import FooterNav from "./footerNav"
@@ -43,16 +44,29 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          // maxWidth: 960,
           // padding: `0 1.0875rem 1.45rem`,
-          padding: `2rem`,
-          backgroundColor: `#efebf2`,
+          padding: `0 2rem 2rem`,
+          backgroundColor: `#693B1A`,
+          backgroundImage: `url(${Background})`,
+          backgroundSize: `cover`,
+          backgroundPosition: `bottom`,
+          minHeight: `100vh`,
         }}
       >
-        <main>{children}</main>
+        <main
+          style={{
+            margin: `0 auto`,
+            maxWidth: 960,
+            padding: `1rem 1.0875rem 1.45rem`,
+            backgroundColor: `#40210b`,
+          }}
+        >{children}</main>
         <footer
           style={{
             marginTop: `2rem`,
+            margin: `0 auto`,
+            maxWidth: 960,
           }}
         >
           <FooterNav/>
