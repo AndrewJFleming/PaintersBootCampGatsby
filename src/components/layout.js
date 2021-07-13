@@ -22,12 +22,24 @@ const Layout = ({ children }) => {
           author
         }
       }
+      file(name: {eq: "header-logo"}) {
+        id
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} siteAuthor={data.site.siteMetadata?.author} />
+      <Header 
+        siteTitle={data.site.siteMetadata?.title || `Title`} 
+        siteAuthor={data.site.siteMetadata?.author} 
+        siteLogo={data.file.childImageSharp.fluid} 
+      />
       <div
         style={{
           margin: `0 auto`,

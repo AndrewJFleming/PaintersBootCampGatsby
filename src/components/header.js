@@ -2,10 +2,11 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import Background from '../images/headerBG.png';
+import Img from "gatsby-image"
 
 import MainNav from "./mainNav"
 
-const Header = ({ siteTitle, siteAuthor }) => (
+const Header = ({ siteTitle, siteAuthor, siteLogo }) => (
   
   <header
     style={{
@@ -30,7 +31,13 @@ const Header = ({ siteTitle, siteAuthor }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          <Img
+            style={{
+              maxWidth: `300px`,
+            }}
+            fluid={siteLogo}
+            alt={siteTitle}
+          />
         </Link>
       </h1>
       <p style={{ margin: `1rem 0 0`,
