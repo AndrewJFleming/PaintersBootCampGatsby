@@ -41,11 +41,9 @@ const Layout = ({ children }) => {
         siteAuthor={data.site.siteMetadata?.author} 
         siteLogo={data.file.childImageSharp.fixed} 
       />
-      <div
+      <div className="mainWrapper"
         style={{
           margin: `0 auto`,
-          // maxWidth: 960,
-          // padding: `0 1.0875rem 1.45rem`,
           padding: `0 2rem 2rem`,
           backgroundColor: `#693B1A`,
           backgroundImage: `url(${Background})`,
