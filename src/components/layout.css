@@ -628,6 +628,12 @@ pre tt:after {
   max-width: 50%;
   margin: 0 20px;
 }
+.wp-block-column:first-child {
+  margin-left: 0;
+}
+.wp-block-column:last-child {
+  margin-right: 0;
+}
 
 .col-left {
   order: 2;

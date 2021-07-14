@@ -12,7 +12,6 @@ const IndexPage = ({ data }) => (
     <Seo title="Home" />
 
       <Jumbotron fluid className="jumbo">
-        <Container>
           {data.wpPage.featuredImage && (
             <figure className={style.homeImg}>
               <Img
@@ -21,11 +20,15 @@ const IndexPage = ({ data }) => (
               />
             </figure>
           )}
-        </Container>
       </Jumbotron>
-      <Container>
+      <article
+        style={{
+          margin: `0 auto`,
+          padding: `1rem 2rem`,
+        }}
+      >
         <div dangerouslySetInnerHTML={{ __html: data.wpPage.content }} />
-      </Container>
+      </article>
    
   </Layout>
 )
