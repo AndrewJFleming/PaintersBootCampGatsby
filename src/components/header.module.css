@@ -7,6 +7,9 @@
   display: flex;
   justify-content: flex-start;
 }
+.headerWrapper a:hover {
+  color: #10316b;
+}
 
 .siteTitleWrapper {
 

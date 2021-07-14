@@ -1,9 +1,13 @@
 .mainnav {
   /* margin: 1rem auto; */
-  margin: 0rem auto 0;
+  /* margin: 0rem auto 0; */
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
   /* padding-bottom: 1rem; */
   font-family: Arial, Helvetica, sans-serif;
-  max-width: 960px;
+  /* max-width: 960px; */
 }
 
 .mainnav ul {
@@ -31,9 +35,16 @@
 
 .mainnav a:hover,
 .mainnav a:focus {
+  border-color: hsla(218, 74%, 24%, 1);
+}
+.mainnav ul ul a:hover,
+.mainnav ul ul a:focus {
   border-color: hsla(0, 0%, 100%, 1);
 }
 
 .mainnav ul ul a {
+  color: white;
+}
+.mainnav ul ul a:hover {
   color: white;
 }
