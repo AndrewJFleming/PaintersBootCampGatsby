@@ -70,9 +70,11 @@ const Layout = ({ children }) => {
           }}
         >
           <FooterNav/>
-          © {new Date().getFullYear()},
-          {` `}
-          <a href="http://andrewjfleming.com/">{data.site.siteMetadata?.author}</a>
+          <div className="footerBottom">
+            © {new Date().getFullYear()},
+            {` `}
+            <a href="http://andrewjfleming.com/">{data.site.siteMetadata?.author}</a>
+          </div>
         </footer>
       </div>
     </>

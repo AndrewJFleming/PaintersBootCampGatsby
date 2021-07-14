@@ -22,12 +22,12 @@
   .footernav a {
     padding: 0.3rem 1rem;
     display: block;
-    color: black;
+    color: hsla(0, 0%, 100%, 0.9);
     border: 1px solid hsla(0, 0%, 100%, 0);
   }
   
   .footernav a:hover,
   .footernav a:focus {
-    border-color: rgb(0, 0, 0);
+    border-color: hsla(0, 0%, 100%, 0.9);
   }
   
