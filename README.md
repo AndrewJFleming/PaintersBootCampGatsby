@@ -2,7 +2,7 @@
 
 <div align="left">
   <a href="http://andrewjfleming.com/">
-    <img src="./images/header-logo.png" alt="Painter's Boot Camp Logo" height="80">
+    <img src="./src/images/header-logo.png" alt="Painter's Boot Camp Logo" height="80">
   </a>
 </div>
 
@@ -21,6 +21,6 @@ Remake of Painter's Bootcamp Blog; New version built with WordPress and Gatsby.
 
 <div align="center">
   <a href="http://andrewjfleming.com/">
-    <img src="./images/ajf-logo-white.png" alt="AJF Logo" height="80">
+    <img src="./src/images/ajf-logo-white.png" alt="AJF Logo" height="80">
   </a>
 </div>
