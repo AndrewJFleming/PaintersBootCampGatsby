@@ -46,8 +46,9 @@ const Layout = ({ children }) => {
           margin: `0 auto`,
           padding: `0 2rem 2rem`,
           backgroundImage: `url(${Background})`,
-          backgroundSize: `cover`,
+          // backgroundSize: `cover`,
           backgroundPosition: `bottom`,
+          backgroundAttachment: `fixed`,
           minHeight: `100vh`,
         }}
       >

@@ -54,7 +54,7 @@ template {
   display: none;
 }
 a {
-  color: #F7DD0C;
+  color: rgba(247, 220, 12, 0.7);
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }

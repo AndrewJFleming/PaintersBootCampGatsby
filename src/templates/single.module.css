@@ -5,7 +5,8 @@
 
 .article {
   margin: 0 auto;
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
+  padding: 0rem 2rem;
 }
 
 .homeImg {
@@ -15,14 +16,14 @@
 }
 
 .featimg {
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   margin-left: -2rem;
   margin-right: -2rem;
 }
 
 .article__title {
   margin-bottom: 1rem;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   font-size: 4rem;
   text-align: center;
 }
@@ -30,7 +31,7 @@
 .article__meta::before {
   display: block;
   margin: 0 auto 1rem;
-  content: "- — -";
+  content: "* * *";
 }
 
 .article__meta {
@@ -47,7 +48,7 @@
 
 .articlelist {
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
 }
 
 .articlelist h2 {
@@ -76,7 +77,7 @@ a {
 .listitem::after {
   content: "";
   display: block;
-  width: 10rem;
-  margin: 4rem auto;
-  border-bottom: 1px solid black;
+  width: 20rem;
+  margin: 4rem auto 0;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.9);;
 }
