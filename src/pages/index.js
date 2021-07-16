@@ -1,16 +1,15 @@
 import * as React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
-import { Jumbotron, Carousel } from 'react-bootstrap';
 
-import * as style from "../templates/single.module.css"
+// import * as style from "../templates/single.module.css"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Slider from "../components/slider"
 
 const IndexPage = ({ data }) => (
   <Layout>
 
-  <Seo title="Home" />
+    <Seo title="Home" />
 
     {/* <Jumbotron fluid className="jumbo">
         {data.wpPage.featuredImage && (
@@ -23,20 +22,7 @@ const IndexPage = ({ data }) => (
         )}
     </Jumbotron> */}
 
-    <Carousel>
-      {data.allFile.nodes.map((file, index) => (
-        <Carousel.Item>
-          <Img
-            className="d-block w-100"
-            fluid={file.childImageSharp.fluid}
-            alt={file.name}
-          />
-          <Carousel.Caption>
-            <h3>{file.name}</h3>
-          </Carousel.Caption>
-        </Carousel.Item>
-      ))}
-    </Carousel>
+    <Slider/>
 
     <article
       style={{
@@ -68,18 +54,6 @@ export const query = graphql`
       #     altText
       #   }
       # }
-    }
-    allFile(
-      filter: {dir: {eq: "D:/Program Files/Git/gatsby/PaintersBootCampGatsby/src/images/homeSlider"}}
-    ) {
-      nodes {
-        name
-        childImageSharp {
-          fluid(maxWidth: 1360) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
     }
   }
 `

@@ -45,7 +45,6 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           padding: `0 2rem 2rem`,
-          backgroundColor: `#693B1A`,
           backgroundImage: `url(${Background})`,
           backgroundSize: `cover`,
           backgroundPosition: `bottom`,
