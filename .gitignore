@@ -72,6 +72,11 @@ yarn-error.log
 *.jpg
 *.jpeg
 *.png
+!/images/ajf-logo-white.png
+!/images/header-logo.png
+!/images/headerBG.png
+!/images/jumboImage.jpg
+!/images/homeSlider
 
 # Local Netlify folder
 .netlify
