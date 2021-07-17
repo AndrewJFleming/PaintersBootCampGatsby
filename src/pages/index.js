@@ -1,28 +1,18 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 
-// import * as style from "../templates/single.module.css"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Slider from "../components/slider"
+// import JumbotronComponent from "../components/jumbotron"
 
 const IndexPage = ({ data }) => (
   <Layout>
 
     <Seo title="Home" />
 
-    {/* <Jumbotron fluid className="jumbo">
-        {data.wpPage.featuredImage && (
-          <figure className={style.homeImg}>
-            <Img
-              fluid={data.wpPage.featuredImage.node.localFile.childImageSharp.fluid}
-              alt={data.wpPage.featuredImage.node.altText}
-            />
-          </figure>
-        )}
-    </Jumbotron> */}
-
     <Slider/>
+    {/* <JumbotronComponent/> */}
 
     <article
       style={{
@@ -42,18 +32,6 @@ export const query = graphql`
       id
       title
       content
-      # featuredImage {
-      #   node {
-      #     localFile {
-      #       childImageSharp {
-      #         fluid(maxWidth: 1360) {
-      #           ...GatsbyImageSharpFluid
-      #         }
-      #       }
-      #     }
-      #     altText
-      #   }
-      # }
     }
   }
 `
