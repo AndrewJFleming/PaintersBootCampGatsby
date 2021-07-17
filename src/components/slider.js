@@ -30,9 +30,9 @@ const images = data.allFile.nodes
             fluid={img.childImageSharp.fluid}
             alt={img.name}
           />
-          <Carousel.Caption>
+          {/* <Carousel.Caption>
             <h3>{img.name}</h3>
-          </Carousel.Caption>
+          </Carousel.Caption> */}
         </Carousel.Item>
       ))}
     </Carousel>
