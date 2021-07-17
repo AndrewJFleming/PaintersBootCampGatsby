@@ -19,7 +19,6 @@ const IndexPage = ({ data }) => (
         <h1>{data.wpPage.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: data.wpPage.content }} />
       </article>
-   
   </Layout>
 )
 
