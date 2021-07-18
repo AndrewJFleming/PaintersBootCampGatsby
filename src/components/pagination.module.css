@@ -21,6 +21,6 @@
 
 .pagenav__item a:hover,
 .pagenav__item a:focus {
-  background-color: white;
+  /* background-color: white; */
   text-decoration: underline;
 }
