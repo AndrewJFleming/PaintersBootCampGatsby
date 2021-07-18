@@ -1,9 +1,7 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import { Jumbotron } from 'react-bootstrap';
 
-import * as style from "../templates/single.module.css"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
